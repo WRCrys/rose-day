@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rose-day/static/css/main.34ce0cb2.css",
+    "main.js": "/rose-day/static/js/main.b0c4db2e.js",
+    "static/js/787.a3adcf3c.chunk.js": "/rose-day/static/js/787.a3adcf3c.chunk.js",
+    "index.html": "/rose-day/index.html",
+    "main.34ce0cb2.css.map": "/rose-day/static/css/main.34ce0cb2.css.map",
+    "main.b0c4db2e.js.map": "/rose-day/static/js/main.b0c4db2e.js.map",
+    "787.a3adcf3c.chunk.js.map": "/rose-day/static/js/787.a3adcf3c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34ce0cb2.css",
+    "static/js/main.b0c4db2e.js"
+  ]
+}
