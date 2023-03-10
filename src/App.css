@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 100%;
+  width: 100%;
+  background: #080f1a;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  color: azure;
+}
+
+.container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container button {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  margin-top: 50px;
   color: white;
+  font-weight: 400;
+  background-color: #fc6d6d;
+  box-shadow: none;
+  border: none;
+  border-radius: 25px;
+  top: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper, .container {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.wrapper .static-txt {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+.wrapper .dynamic-txts {
+  margin-left: 15px;
+  height: 50px;
+  line-height: 50px;
+  /* overflow: hidden; */
+}
+
+.dynamic-txts li {
+  list-style: none;
+  font-size: 40px;
+  font-weight: 500;
+  color: #fc6d6d;
+  position: relative;
+  top: 0;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* border-left: 2px solid #fc6d6d; */
+  animation: typing 5s steps(10) infinite;
+  background: #080f1a;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    left: 0;
   }
 }
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+/* .div-orientation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+} */
+
+/* .div-orientation p {
+  font-size: 24px;
+  margin-left: 18px;
+  margin-top: 30px;
+} */
+
+/* .div-orientation p span {
+  color: #fc6d6d;
+} */
